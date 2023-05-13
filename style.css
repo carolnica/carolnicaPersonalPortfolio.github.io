@@ -1,0 +1,317 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+#title-container {
+    width: 80vw;
+    height: 20vh;
+    margin-top: 1vh;
+    background-color: #aaaaaa;
+    border: 5px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0.1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
+}
+
+#title-text {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.03rem #fff;
+    text-align: center;
+}
+
+#navigation {
+    width: 300px;
+    height: 50px;
+    background-color: #aaa;
+    border: 4px solid #000;
+    border-radius: 5px;
+    margin-top: 22vh;
+    margin-left: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0.1px #000;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 1.3rem;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    -webkit-text-stroke: 0.5px #fff;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
+
+#about {
+    position: absolute;
+    background-color: #aaa;
+    width: 420px;
+    height: 350px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 0.1px #000;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#about-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+}
+
+#about-text {
+    text-align: center;
+    width: 90%;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#projects {
+    position: absolute;
+    background-color: #aaa;
+    width: 420px;
+    height: 300px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 0.1px #000;
+    top: 110vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#projects-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.project-image {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    border: 3px solid #000;
+    box-shadow: 0 0 4px 0.1px #000;
+    margin: 120px 0 -105px -2px;
+    top: -106px;
+    left: 135.5px;
+    z-index: 1;
+}
+
+.website-button {
+    width: 100px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    box-shadow: 0 0 4px 0.1px #000;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 160px;
+    transition: 0.5s;
+}
+
+.code-button {
+    width: 100px;
+    height: 30px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    box-shadow: 0 0 4px 0.1px #000;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 160px;
+    transition: 0.5s;
+}
+
+.website-button:hover, .code-button:hover {
+    border-color: #000;
+    background-color: #fff;
+    color: #000;
+}
+
+#see-all {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.4s;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#see-all:hover {
+    color: #fff;
+}
+
+#black-screen {
+    top: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007d;
+    display: none;
+}
+
+#project-screen {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #aaa;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 0.2px #fff;
+    display: none;
+}
+
+#close-screen {
+    position: absolute;
+    z-index: 6;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.5s;
+    display: none;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#close-screen:hover {
+    border: 3px solid #fff;
+    background-color: #000;
+    color: #fff;
+}
+
+#first-ext {
+    margin-left: -80px;
+}
+
+#second-ext {
+    position: absolute;
+    margin-top: -122px;
+    margin-left: 160px;
+}
+
+#contact {
+    position: absolute;
+    background-color: #aaa;
+    width: 420px;
+    height: 300px;
+    border: 5px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 0 4px 0.1px #000;
+    top: 157vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2%;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+#contact-me a, #social a{
+    text-decoration: none;
+    color: #000;
+    -webkit-text-stroke: 0.25px #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+
+}
+
+#contact-me a:hover, #social a:hover{
+    color: #fff;
+    -webkit-text-stroke: 0.4px #000;
+}
+
+#contact-me {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+#social {
+    width: 100px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
