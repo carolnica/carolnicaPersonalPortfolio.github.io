@@ -263,6 +263,12 @@ ul li a:hover {
     margin-left: 160px;
 }
 
+#third-ext {
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 35px;
+}
+
 #contact {
     position: absolute;
     background-color: #aaa;
